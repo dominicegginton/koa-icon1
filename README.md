@@ -1,1 +1,1 @@
-# icon
+# koa-icon

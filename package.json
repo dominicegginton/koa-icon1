@@ -1,0 +1,42 @@
+{
+  "name": "koa-icon",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Lighting Fast Node.js Koa Middleware for Serving a Favicon 🚀",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo not setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominicegginton/koa-icon.git"
+  },
+  "keywords": [
+    "koa",
+    "middleware",
+    "serve",
+    "favicon"
+  ],
+  "author": {
+    "name": "Dominic Egginton",
+    "email": "dominic.egginton@gmail.com",
+    "url": "https://dominicegginton.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominicegginton/koa-icon/issues",
+    "email": "dominic.egginton@gmail.com"
+  },
+  "homepage": "https://github.com/dominicegginton/koa-icon#readme",
+  "dependencies": {
+    "etag": "^1.8.1",
+    "fs-extra": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "koa": "^2.11.0",
+    "mock-fs": "^4.11.0",
+    "standard": "^14.3.3",
+    "supertest": "^4.0.2"
+  }
+}
