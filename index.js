@@ -12,6 +12,14 @@ const DEFAULT_OPTIONS = {
   type: 'x-icon'
 }
 
+/**
+ * serves favicon @ /favicon.ico
+ * @param {String|Buffer} path path to favicon, or buffer containing favicon data
+ * @param {Object} options koa-icon options object
+ * @param {Number} options.maxAge maximum time the favicon is considered fresh - default one day
+ * @param {String} options.type mime type of favicon - default 'x-icon'
+ * @returns {Function} middleware serving cached favicon @ /favicon.ico
+ */
 function middleware (path, options) {
   if (!path) throw new Error('[koa-icon] path is required')
 
