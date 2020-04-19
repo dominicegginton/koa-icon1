@@ -5,7 +5,9 @@
   "description": "Lighting Fast Node.js Koa Middleware for Serving a Favicon 🚀",
   "main": "index.js",
   "scripts": {
-    "test": "echo not setup"
+    "test": "jest",
+    "lint": "standard",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
