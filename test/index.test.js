@@ -162,7 +162,7 @@ describe('favicon()', () => {
 
     test('GET /favicon.ico : status should be 200 when if-none-match header is sent and etag doesnt match', async () => {
       this.app.use(favicon('./assets/favicon.ico'))
-      const res = await this .request.get('/favicon.ico').set('If-None-Match', 'invalid')
+      const res = await this.request.get('/favicon.ico').set('If-None-Match', 'invalid')
       expect(res.status).toBe(200)
     })
 
