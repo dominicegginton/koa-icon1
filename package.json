@@ -1,7 +1,6 @@
 {
   "name": "koa-icon",
-  "version": "1.0.0",
-  "type": "module",
+  "version": "1.0.1",
   "description": "Lighting Fast Node.js Koa Middleware for Serving a Favicon 🚀",
   "main": "index.js",
   "scripts": {
