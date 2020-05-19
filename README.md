@@ -59,7 +59,7 @@ To serve a favicon pass **koa-icon's** middleware to your `app.use()` function. 
 app.use(favicon('/assets/favicon.ico'))
 ```
 
-### File Typee
+### File Type
 
 **koa-icon** supports all [favicon file formats](https://en.wikipedia.org/wiki/Favicon) out of the box. Use the `options.type` parameter to set the file type of your favicon
 
