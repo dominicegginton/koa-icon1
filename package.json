@@ -38,6 +38,6 @@
     "koa": "^2.11.0",
     "mock-fs": "^4.11.0",
     "standard": "^14.3.3",
-    "supertest": "^4.0.2"
+    "supertest": "^5.0.0"
   }
 }
