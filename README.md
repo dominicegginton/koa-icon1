@@ -12,7 +12,7 @@
 ## Features
 
 - Caches favicon for fast responses
-- Supports all favicon file types
+- Supports all favicon file formats
 - Built-in [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) support
 - Easy Cache-control header options
 - Simple API
@@ -39,15 +39,15 @@ app.listen(3000)
 
 ### Serving a Favicon
 
-To serve a favicon pass **koa-icon's** middleware to your `app.use()` function. **koa-icon** comes with great defaults options making getting effortless.
+**koa-icon** comes with great default options making serving a favicon effortless. Simply provide the relative path to your favicon file and pass the middleware to Koa with a `app.use()`. It's recommended placing **koa-icon** above routers and other middleware that serve static files
 
 ``` js
 app.use(favicon('./favicon.ico'))
 ```
 
-### File Type
+### File Formats
 
-**koa-icon** supports all [favicon file formats](https://en.wikipedia.org/wiki/Favicon) out of the box. Use the `options.type` parameter to set the file type of your favicon
+All favicon file formats are supported by **koa-icon**. Use the `options.type` parameter to set the file format of your favicon
 
 ``` js
 app.use(favicon('/favicon.png'), { type: 'png' })
@@ -55,7 +55,7 @@ app.use(favicon('/favicon.png'), { type: 'png' })
 
 ### Using a Buffer
 
-Reading your favicon from file or requesting it from another source can be done manually by passing **koa-icon** a `Buffer`
+Reading your favicon from file or requesting it from another source can be done manually by passing **koa-icon** a object of type  `Buffer`
 
 ``` js
 const icon = fs.readFileSync('./favicon.ico')
@@ -64,9 +64,7 @@ app.use(favicon(icon))
 
 ### Setting the Cache-Control HTTP Header
 
-The [cash-control header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) holds directives (instructions) for caching in both requests and responses and is used to determine how long a given resource is considered fresh
-
-**koa-icon** makes it easy to control how long your favicon is considered fresh. Pass the maximum age in seconds in the `options.maxAge` perimeter
+The [Cash-Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) HTTP header is used to specify browser cashing policies in both client requests and server responses.Use the `options.maxAge` perimeter to pass the number of seconds you wish for clients to cache the favicon
 
 ``` js
 app.use(favicon('./favicon.ico'), { maxAge: 3600 }) // 1 hour
@@ -76,7 +74,7 @@ app.use(favicon('./favicon.ico'), { maxAge: 3600 }) // 1 hour
 
 ### ETags and Request Freshness
 
-An [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) is a identifer assigned by a web server to a specific version of a resource, and passed to the client within the HTTP ETag header of the response. When the resource at a given URL is updated a new unique ETag is generated. **koa-icon** uses the [**etag**](https://github.com/jshttp/etag) module to generate ETags.
+An [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) is a unique identifer assigned by the web server to a specific version of a resource then passed to the client within the HTTP ETag header of the response. When the resource is updated or changed a new unique ETag is generated. **koa-icon** uses the [**etag**](https://github.com/jshttp/etag) module to generate ETags. 
 
 Request freshness is determined by matching the current resources ETag against the ETag received from the [If-None-Match](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match) HTTP request header. Fresh requests are responded with a status code of **304** (not modified) and stale requests are sent a status code of **200** along with the favicon in the response body. Support for ETags and freshness checking is built into **koa-icon** by default.
 
