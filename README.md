@@ -30,7 +30,7 @@ const Koa = require('koa')
 const favicon = require('koa-icon')
 const app = new Koa()
 
-app.use(favicon('/assets/favicon.ico'))
+app.use(favicon('./favicon.ico'))
 
 app.listen(3000)
 ```
@@ -42,7 +42,7 @@ app.listen(3000)
 To serve a favicon pass **koa-icon's** middleware to your `app.use()` function. **koa-icon** comes with great defaults options making getting effortless.
 
 ``` js
-app.use(favicon('/assets/favicon.ico'))
+app.use(favicon('./favicon.ico'))
 ```
 
 ### File Type
@@ -50,7 +50,7 @@ app.use(favicon('/assets/favicon.ico'))
 **koa-icon** supports all [favicon file formats](https://en.wikipedia.org/wiki/Favicon) out of the box. Use the `options.type` parameter to set the file type of your favicon
 
 ``` js
-app.use(favicon('/assets/favicon.png'), { type: 'png' })
+app.use(favicon('/favicon.png'), { type: 'png' })
 ```
 
 ### Using a Buffer
@@ -58,7 +58,7 @@ app.use(favicon('/assets/favicon.png'), { type: 'png' })
 Reading your favicon from file or requesting it from another source can be done manually by passing **koa-icon** a `Buffer`
 
 ``` js
-const icon = fs.readFileSync('/assets/favicon.ico')
+const icon = fs.readFileSync('./favicon.ico')
 app.use(favicon(icon))
 ```
 
@@ -69,7 +69,7 @@ The [cash-control header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Head
 **koa-icon** makes it easy to control how long your favicon is considered fresh. Pass the maximum age in seconds in the `options.maxAge` perimeter
 
 ``` js
-app.use(favicon(__dirname + '/assets/favicon.ico'), { maxAge: 3600 }) // 1 hour
+app.use(favicon('./favicon.ico'), { maxAge: 3600 }) // 1 hour
 ```
 
 >  **koa-icons** default value for `options.maxAge` is 86400 (1 day), and will max out at 31536000 (1 year)
