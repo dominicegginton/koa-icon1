@@ -1,11 +1,13 @@
-# koa-icon
+<h1 align='center'>koa-icon</h1>
 
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/dominicegginton/koa-icon/CI/master?label=CI)](https://github.com/dominicegginton/koa-icon/actions)
-[![Code Climate coverage](https://img.shields.io/codeclimate/coverage/dominicegginton/koa-icon)](https://codeclimate.com/github/dominicegginton/koa-icon)
-[![npm](https://img.shields.io/npm/dt/koa-icon?label=Downloads)](https://www.npmjs.com/package/koa-icon)
-[![js-standard-style](https://img.shields.io/badge/Code%20Style-standard-brightgreen.svg)](http://standardjs.com)
+<h4 align='center'>Lighting fast favicon middleware for Koa</h4>
 
-> :rocket: Lighting fast favicon middleware for Koa
+<div align='center'>
+  <img src='https://img.shields.io/github/workflow/status/dominicegginton/koa-icon/CI/master?label=CI'>
+  <img src='https://img.shields.io/codeclimate/coverage/dominicegginton/koa-icon'>
+  <img src='https://img.shields.io/npm/dt/koa-icon?label=Downloads'>
+  <img src='https://img.shields.io/badge/Code%20Style-standard-brightgreen.svg'>
+</div>
 
 ## Why
 
