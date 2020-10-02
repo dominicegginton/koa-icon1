@@ -9,13 +9,13 @@
   <img src='https://img.shields.io/badge/Code%20Style-standard-brightgreen.svg'>
 </div>
 
-## Why
+## Features
 
-- Caches your favicon for fast responses
-- Built-in [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) support
+- Caches favicon for fast responses
 - Supports all favicon file types
-- Cache-control header support
-- Easy to use API
+- Built-in [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) support
+- Easy Cache-control header options
+- Simple API
 
 ## Install
 
