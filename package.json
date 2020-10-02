@@ -2,7 +2,7 @@
   "name": "koa-icon",
   "version": "1.0.4",
   "description": "🚀 Lighting fast favicon middleware for Koa",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "lint": "standard",
