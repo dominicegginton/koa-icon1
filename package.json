@@ -25,8 +25,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dominicegginton/koa-icon/issues",
-    "email": "dominic.egginton@gmail.com"
+    "url": "https://github.com/dominicegginton/koa-icon/issues"
   },
   "homepage": "https://github.com/dominicegginton/koa-icon#readme",
   "dependencies": {
