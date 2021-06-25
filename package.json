@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "Lighting fast favicon middleware for Koa",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">12"
+  },
   "scripts": {
     "test": "jest",
     "lint": "standard",
