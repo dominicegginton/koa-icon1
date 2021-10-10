@@ -1,21 +1,6 @@
-<h1 align='center'>koa-icon</h1>
+# koa-icon
 
-<h4 align='center'>Lighting fast favicon middleware for Koa</h4>
-
-<div align='center'>
-  <img src='https://img.shields.io/github/workflow/status/dominicegginton/koa-icon/CI/master?label=CI'>
-  <img src='https://img.shields.io/codeclimate/coverage/dominicegginton/koa-icon'>
-  <img src='https://img.shields.io/npm/dt/koa-icon?label=Downloads'>
-  <img src='https://img.shields.io/badge/Code%20Style-standard-brightgreen.svg'>
-</div>
-
-## Features
-
-- Caches favicon for fast responses
-- Supports all favicon file formats
-- Built-in [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) support
-- Easy Cache-control header options
-- Simple API
+Lighting fast Koa middleware for serving favicons, with built in support for all file formats. **koa-icon** caches favicon files in memeory for fast request response times and comes with build in [ETag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag) and Cache-control support, all with a simple to use API.
 
 ## Install
 
